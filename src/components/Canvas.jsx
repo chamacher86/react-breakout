@@ -16,8 +16,8 @@ const Canvas = () => {
             preserveAspectRatio="xMaxYMax none"
             viewBox={[minWidth, minHeight, width, height]}
         >
-            <Paddle position={{x: 0, y: 0}} />
-            <Ball position={{x: 0, y: -100}}/>
+            <Paddle position={{x: 0, y: -minHeight - 100}} />
+            <Ball position={{x: 0, y: 0}}/>
             <CurrentScore score={15} />
         </svg>
     );
