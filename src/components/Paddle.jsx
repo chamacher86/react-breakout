@@ -7,17 +7,16 @@ const Paddle = (props) => {
         fill: STYLES.paddleColor,
     };
 
-    const transform = `rotate(${props.rotation}, 0, 0)`;
-
     const width = 100;
-    const halfBase = width / 2;
+    const halfWidth = width / 2;
     const height = 20;
+    const halfHeight = height / 2;
 
     return (
         <g>
             <rect
-                x={-halfBase}
-                y={height}
+                x={props.position.x - halfWidth}
+                y={props.position.y - halfHeight}
                 width={width}
                 height={height}
                 rx={2}
